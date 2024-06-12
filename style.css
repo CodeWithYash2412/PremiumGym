@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: purple;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+
+.main-title {
+    color: white;
+}
+
+.nav-tabs {
+
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-tabs a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.nav-tabs a:hover {
+    text-decoration: double underline;
+}
+
+.titleImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    /* background-image: url(/HomeImage.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/HomeImage.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titleImage h1 {
+    color: wheat;
+    text-align: center;
+}
+
+.titleImage h1 span {
+    color: purple;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2px;
+    border-radius: 3px;
+    font-size: xx-large;
+    /* filter: blur(8px); */
+    /* backdrop-filter: blur(8px); */
+}
+
+.about {
+    background-color: blanchedalmond;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about figure,
+.about article {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.about article {
+    padding-right: 15%;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.about article h3 {
+    font-size: x-large;
+}
+
+
+.why_choose_us h2 {
+    text-align: center;
+    margin: 10px;
+    border: 1px black solid;
+    padding: 5px;
+}
+
+
+.chooseMain {
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.budget,
+.equipment,
+.coach,
+.diet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 25%;
+
+}
+
+.budget:hover,
+.equipment:hover,
+.coach:hover,
+.diet:hover {
+    background-color: purple;
+    color: white;
+    transition: all 300ms;
+}
+
+
+.plans {
+    height: 45vh;
+    background-color: #1d3557;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans h2 {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.plans table {
+    width: 50vw;
+    height: 60%;
+    border: 1px white solid;
+}
+
+.plans td,
+.plans th {
+    text-align: center;
+    border: 1px wheat solid;
+}
+
+.plans th {
+    height: 25px;
+}
+
+.plans thead tr th {
+    background-color: plum;
+}
+
+.plans tbody tr {
+    color: white;
+}
+
+
+.contact {
+    height: fit-content;
+    padding: 15px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h3 {
+    font-size: 25px;
+}
+
+.contact form {
+    width: 40%;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact form section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact form section label {
+    font-size: 17px;
+    text-align: left;
+}
+
+.contact form section input,
+.contact form section select {
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+.fullname,
+.email,
+.mobile,
+.gymtime,
+.age {
+    margin: 15px;
+}
+
+.age {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.age h4 {
+    text-align: center;
+    font-size: large;
+}
+
+.chooseAge {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+
+}
+
+.submitBtn {
+    margin: 15px;
+    width: 60%;
+    height: 35px;
+    font-size: larger;
+    background-color: blueviolet;
+    color: whitesmoke;
+    border-radius: 5px;
+
+}
+
+.submitBtn:hover {
+    background-color: blue;
+    transition: all 300ms;
+}
+
+footer {
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p {
+    color: white;
+}
